@@ -41,7 +41,7 @@
 // 3 is mendel-parts thermistor
 // 4 is 10k thermistor
 // 5 is ParCan supplied 104GT-2 100K
-// 6 is EPCOS 100k // Heater bed thermistor from Lulzbot
+// 6 is EPCOS 100k
 // 7 is 100k Honeywell thermistor 135-104LAG-J01
 
 #define THERMISTORHEATER_0 1
@@ -56,7 +56,7 @@
 //#define HEATER_2_USES_AD595
 
 // Select one of these only to define how the bed temp is read.
-#define THERMISTORBED 1
+#define THERMISTORBED 6
 #define BED_USES_THERMISTOR
 //#define BED_LIMIT_SWITCHING
 #ifdef BED_LIMIT_SWITCHING
@@ -240,7 +240,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {69.9921,69.9921,2267.8951,547.509} // Todd's First Try
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {62.9921, 62.9921, 2267.8951, 757.2218} // SAE Prusa w/ 43 tooth Wade extruder and 10 XL gears Todd's Second Try
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {62.9921, 62.9921, 2284.7651, 757.2218} // 2267.8951 3333.92 4319.80 SAE Prusa w/ 43 tooth Wade extruder and 10 XL gears
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {44.4444, 44.4444, 2284.7651, 757.2218} // 2267.8951 3333.92 4319.80 SAE Prusa w/ 43 tooth Wade extruder and 10 XL gears
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {40, 40, 3333.92, 360} //sells mendel with v9 extruder
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.3232, 80.8900, 2284.7651, 757.2218} // SAE Prusa w/ Wade extruder
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 45}    // (mm/sec)    
